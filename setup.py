@@ -1,10 +1,13 @@
 from setuptools import setup, find_packages
 import os
 
+# the package name
+name='canaimagnulinux.web.theme'
 version = '0.1'
+# get packages from the package name: '1.2.3' -> ['1','1.2','1.2.3']
+packages = [name.rsplit('.',x)[0] for x in reversed(range(len(name.split('.'))))]
 
-setup(# the package name
-      name='canaimagnulinux.web.theme',
+setup(name=name,
       version=version,
       description="Canaima GNU/Linux Website Kerepakupai Theme",
       long_description=open("README.rst").read() + "\n" +
@@ -20,10 +23,9 @@ setup(# the package name
       author='Leonardo J. Caballero G.',
       author_email='leonardocaballero@gmail.com',
       url='https://github.com/CanaimaGNULinux/canaimagnulinux.web.theme',
-      license='gpl',
-      # get packages from the package name: '1.2.3' -> ['1','1.2','1.2.3']
-      packages = [name.rsplit('.',x)[0] for x in reversed(range(len(name.split('.'))))],
-      # all except the last are treated as namespace_packages
+      license='GPLv2',
+      packages = packages,
+      # all except the last are treated as namespace_packages like ['1', '1.2'],
       namespace_packages = packages[:-1],
       include_package_data=True,
       zip_safe=False,
