@@ -39,6 +39,9 @@ Sobre la calidad
    :alt: Travis-CI badge
    :target: https://travis-ci.org/CanaimaGNULinux/canaimagnulinux.web.theme
 
+.. image:: https://coveralls.io/repos/CanaimaGNULinux/canaimagnulinux.web.theme/badge.png?branch=master
+   :alt: Coveralls badge
+   :target: https://coveralls.io/r/CanaimaGNULinux/canaimagnulinux.web.theme?branch=master
 
 Autor(es) Original(es)
 ======================
@@ -48,8 +51,9 @@ Autor(es) Original(es)
 Colaboraciones impresionantes
 =============================
 
-* Nombre Completo aka apodo
+* Axel Díaz aka Axelio
 
+* Dehivis Perez aka dehivix
 
 Para una lista actualizada de todo los colaboradores visite:
 https://github.com/canaimagnulinux/canaimagnulinux.web.theme/contributors
