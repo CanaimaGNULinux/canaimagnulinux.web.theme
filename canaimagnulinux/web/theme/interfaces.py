@@ -1,6 +1,6 @@
 from zope.interface import Interface
+from plone.theme.interfaces import IDefaultPloneLayer
 
+class ICanaimaGNULinuxLayer(IDefaultPloneLayer):
+    """ Default browser layer for canaimagnulinux.web.policy """
 
-class ICustomTheme(Interface):
-    """Marker interface that defines a Zope 3 browser layer.
-    """

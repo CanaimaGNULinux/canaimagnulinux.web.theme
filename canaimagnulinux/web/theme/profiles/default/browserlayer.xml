@@ -4,5 +4,5 @@
      when this product is installed. -->
 <layers>
     <layer name="canaimagnulinux.web.theme.customization.layer"
-      interface="canaimagnulinux.web.theme.interfaces.ICustomTheme" />
+      interface="canaimagnulinux.web.theme.interfaces.ICanaimaGNULinuxLayer" />
 </layers>
