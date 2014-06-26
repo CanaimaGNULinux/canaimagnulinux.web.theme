@@ -34,13 +34,13 @@ class InstallTestCase(unittest.TestCase):
         qi = getattr(self.portal, 'portal_quickinstaller')
         self.assertTrue(qi.isProductInstalled(PROJECTNAME))
 
-    def test_dependencies_installed(self):
-        """
-        This method test that dependencies products are installed of this package.
-        """
-        for p in DEPENDENCIES:
-            self.assertTrue(self.qi.isProductInstalled(p),
-                            '%s not installed' % p)
+#    def test_dependencies_installed(self):
+#        """
+#        This method test that dependencies products are installed of this package.
+#        """
+#        for p in DEPENDENCIES:
+#            self.assertTrue(self.qi.isProductInstalled(p),
+#                            '%s not installed' % p)
 
     def test_addon_layer(self):
         """
