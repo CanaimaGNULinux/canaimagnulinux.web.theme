@@ -42,7 +42,7 @@ setup(name=name,
           'setuptools',
           'z3c.jbot',
           # -*- Extra requirements: -*-
-          'collective.cover==1.0a8.post1',
+#          'collective.cover==1.0a8.post1',
       ],
       extras_require={
         'test': ['plone.app.testing'],

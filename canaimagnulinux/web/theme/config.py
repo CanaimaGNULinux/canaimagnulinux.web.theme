@@ -4,5 +4,5 @@ PROJECTNAME = 'canaimagnulinux.web.theme'
 
 DEPENDENCIES = [
     'z3c.jbot',
-    'collective.cover',
+#    'collective.cover',
     ]
