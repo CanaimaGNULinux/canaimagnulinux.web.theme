@@ -21,6 +21,8 @@
                          <a href="http://creativecommons.org/licenses/GPL/2.0/" i18n:translate="label_gnu_gpl_licence">GNU GPL license</a></span>.
                </span>
           </p>
+          <p>El Proyecto Canaima es mantenido y administrado por su comunidad. Este es un sitio mantenido por la comunidad Canaima. La asociación civil CNTI no es responsable por su contenido.</p>
+          <!--
           <p>This footer may be updated by editing the plone.app.layout.viewlets.footer.pt template in your theme's "template_overrides" directory. Any Plone viewlet or skin template my be similarly overriden.</p>
-
+          -->
 </div>
