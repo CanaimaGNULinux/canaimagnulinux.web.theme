@@ -46,6 +46,8 @@ Sobre la calidad
 Autor(es) Original(es)
 ======================
 
+* Maximiliano Vilchez aka maxudes
+
 * Leonardo J .Caballero G. aka macagua
 
 Colaboraciones impresionantes
@@ -54,6 +56,14 @@ Colaboraciones impresionantes
 * Axel Díaz aka Axelio
 
 * Dehivis Perez aka dehivix
+
+* Rodrigo Bravo aka goidor
+
+* Eliezer Romero aka eliezerfot123
+
+* Miguel Sanabria aka masc1293
+
+* Ericka Simancas aka erickaackseriam
 
 Para una lista actualizada de todo los colaboradores visite:
 https://github.com/canaimagnulinux/canaimagnulinux.web.theme/contributors
