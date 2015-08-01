@@ -1,6 +1,8 @@
-from zope.interface import Interface
+# -*- coding: utf-8 -*-
+
+# from zope.interface import Interface
 from plone.theme.interfaces import IDefaultPloneLayer
+
 
 class ICanaimaGNULinuxLayer(IDefaultPloneLayer):
     """ Default browser layer for canaimagnulinux.web.policy """
-

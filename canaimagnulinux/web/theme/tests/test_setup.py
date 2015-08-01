@@ -4,17 +4,20 @@
 This is an integration "unit" test.
 """
 
-import unittest
-
-from plone.browserlayer.utils import registered_layers
-from plone.app.testing import setRoles
-from plone.app.testing import TEST_USER_ID
-
 from Products.CMFCore.utils import getToolByName
 
-from canaimagnulinux.web.theme.config import PROJECTNAME, DEPENDENCIES
+# from canaimagnulinux.web.theme.config import DEPENDENCIES
+from canaimagnulinux.web.theme.config import PROJECTNAME
+# from canaimagnulinux.web.theme.interfaces import ICanaimaGNULinuxLayer
 from canaimagnulinux.web.theme.testing import INTEGRATION_TESTING
-from canaimagnulinux.web.theme.interfaces import ICanaimaGNULinuxLayer
+
+from plone.app.testing import TEST_USER_ID
+from plone.app.testing import setRoles
+
+from plone.browserlayer.utils import registered_layers
+
+import unittest
+
 
 class InstallTestCase(unittest.TestCase):
     """
@@ -40,7 +43,7 @@ class InstallTestCase(unittest.TestCase):
 #        """
 #        for p in DEPENDENCIES:
 #            self.assertTrue(self.qi.isProductInstalled(p),
-#                            '%s not installed' % p)
+#                            '{0} not installed'.format(p))
 
     def test_addon_layer(self):
         """
@@ -49,6 +52,7 @@ class InstallTestCase(unittest.TestCase):
         layers = [l.getName() for l in registered_layers()]
         self.assertTrue('ICanaimaGNULinuxLayer' in layers,
                         'add-on layer was not installed')
+
 
 class UninstallTestCase(unittest.TestCase):
 

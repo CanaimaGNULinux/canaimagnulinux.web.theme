@@ -8,15 +8,18 @@ Check out all tests on this package:
 ./bin/test -s canaimagnulinux.web.theme --list-tests
 """
 
-from plone.testing.z2 import ZSERVER_FIXTURE, installProduct, uninstallProduct
-
+from plone.app.testing import FunctionalTesting
+from plone.app.testing import IntegrationTesting
+from plone.app.testing import PLONE_FIXTURE
 from plone.app.testing import PloneSandboxLayer
 from plone.app.testing import applyProfile
-from plone.app.testing import PLONE_FIXTURE
-from plone.app.testing import IntegrationTesting
-from plone.app.testing import FunctionalTesting
+
+from plone.testing.z2 import ZSERVER_FIXTURE
+from plone.testing.z2 import installProduct
+from plone.testing.z2 import uninstallProduct
 
 from zope.configuration import xmlconfig
+
 
 class Fixture(PloneSandboxLayer):
 
@@ -47,19 +50,19 @@ FIXTURE = Fixture()
 
 """
 We use this base for all the tests in this package. If necessary,
-we can put common utility or setup code in here. This applies to unit 
+we can put common utility or setup code in here. This applies to unit
 test cases.
 """
 INTEGRATION_TESTING = IntegrationTesting(
     bases=(FIXTURE,),
-    name="canaimagnulinux.web.theme:Integration"
+    name='canaimagnulinux.web.theme:Integration'
 )
 
 """
-We use this for functional integration tests. Again, we can put basic 
+We use this for functional integration tests. Again, we can put basic
 common utility or setup code in here.
 """
 ACCEPTANCE_TESTING = FunctionalTesting(
     bases=(FIXTURE, ZSERVER_FIXTURE),
-    name="canaimagnulinux.web.theme:Acceptance"
+    name='canaimagnulinux.web.theme:Acceptance'
 )

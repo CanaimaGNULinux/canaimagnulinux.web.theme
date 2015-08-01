@@ -7,7 +7,7 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
- 
+
 /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 article,
 aside,
@@ -279,14 +279,14 @@ img {
 
 
 
- 
+
 .wrapper {
     min-height: 100%;
     height: auto !important;
     height: 100%;
     margin: 0 auto -50px; /* same as the footer */
 }
- 
+
 .push {
     height: 50px; /* same as the footer */
 }
@@ -579,10 +579,10 @@ dd {
   .dl-horizontal dd:after {
     content: " ";
     /* 1 */
-  
+
     display: table;
     /* 2 */
-  
+
   }
   .dl-horizontal dd:after {
     clear: both;
@@ -591,10 +591,10 @@ dd {
   .dl-horizontal dd:after {
     content: " ";
     /* 1 */
-  
+
     display: table;
     /* 2 */
-  
+
   }
   .dl-horizontal dd:after {
     clear: both;
@@ -1673,7 +1673,7 @@ fieldset[disabled] .btn {
 }
 .btn-default {
   color: #fff;
-  background-color: #778c31; 
+  background-color: #778c31;
   border-color: #cccccc;
 }
 .btn-default:hover,
@@ -3349,7 +3349,7 @@ td.visible-print {
 #menu-accesibilidad {
   color: #ffffff;
   background-color: #362c2b;
-  list-style-type: none; 
+  list-style-type: none;
   text-align: right;
 }
 
@@ -3415,13 +3415,13 @@ td.visible-print {
 }
 .separador-verde
 {
-  display: block; 
+  display: block;
   height: 5px;
-  border: 0; 
-  border-top: 3px 
+  border: 0;
+  border-top: 3px
   solid #778c31;
-  margin: 1em 0; 
-  padding: 0; 
+  margin: 1em 0;
+  padding: 0;
 }
 @media (min-width: 992px) {
 .columna1 {
@@ -3431,14 +3431,11 @@ td.visible-print {
     background: #44785b;
     text-align: center;
 }
-<<<<<<< HEAD
-=======
 
 .fondo-imagen {
   background-image: url(../images/slider_index.png);
 }
 
->>>>>>> 40b1550f51bb42f953516c963babd63af1b0486c
 .columna {
     background: src("static/images/columna.png") repeat-x;
     text-align: center;
@@ -3447,13 +3444,12 @@ td.visible-print {
 
 .separador-marron
 {
-  display: block; 
+  display: block;
   height: 5px;
-  border: 0; 
-  border-top: 3px 
-  solid #cdc0a3;
-  margin: 1em 0; 
-  padding: 0; 
+  border: 0;
+  border-top: 3px solid #cdc0a3;
+  margin: 1em 0;
+  padding: 0;
 }
 .image
 {
