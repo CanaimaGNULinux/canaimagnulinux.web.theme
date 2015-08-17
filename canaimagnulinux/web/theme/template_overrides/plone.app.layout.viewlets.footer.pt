@@ -1,4 +1,5 @@
 <div i18n:domain="plone"
+     tal:define="portal_url context/portal_url;"
      id="portal-footer">
           <p>
                <span i18n:translate="description_copyright" tal:omit-tag="">
@@ -22,7 +23,7 @@
                </span>
           </p>
 
-          <p>Este sitio Web soporta la iniciativa <a href="#" title="Iniciativa datos abiertos">datos abiertos</a>, usted puede consultar los datos disponibles en esta <a href="open-data" title="Datos abiertos en Canaima GNU/Linux">página</a>.</p>
+          <p>Este sitio Web soporta la filosofía de <a href="https://es.wikipedia.org/wiki/Datos_abiertos" title="Filosofía de datos abiertos">datos abiertos</a>, usted puede consultar los datos disponibles en esta <a href="#" tal:attributes="href string:${portal_url}/open-data" title="Datos abiertos en Canaima GNU/Linux">página</a>.</p>
 
           <p>El Proyecto Canaima es mantenido y administrado por su comunidad. Este es un sitio mantenido por la comunidad Canaima. La asociación civil CNTI no es responsable por su contenido.</p>
           <!--
