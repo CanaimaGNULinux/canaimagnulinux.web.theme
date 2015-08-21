@@ -11,7 +11,7 @@ import unittest
 
 
 class TestBrowserLayer(unittest.TestCase):
-    """Ensure browser layer is installed and uninstalled properly."""
+    """ Ensure browser layer is installed and uninstalled properly. """
 
     layer = INTEGRATION_TESTING
 

@@ -16,9 +16,7 @@ import unittest
 
 
 class InstallTestCase(unittest.TestCase):
-    """
-    The class that tests the installation of a particular product.
-    """
+    """ The class that tests the installation of a particular product. """
 
     layer = INTEGRATION_TESTING
 
@@ -27,16 +25,12 @@ class InstallTestCase(unittest.TestCase):
         self.qi = api.portal.get_tool('portal_quickinstaller')
 
     def test_installed(self):
-        """
-        This method test the default GenericSetup profile of this package.
-        """
+        """ This method test the default GenericSetup profile of this package. """
         qi = getattr(self.portal, 'portal_quickinstaller')
         self.assertTrue(qi.isProductInstalled(PROJECTNAME))
 
 #    def test_dependencies_installed(self):
-#        """
-#        This method test that dependencies products are installed of this package.
-#        """
+#        """ This method test that dependencies products are installed of this package. """
 #        for p in DEPENDENCIES:
 #            self.assertTrue(self.qi.isProductInstalled(p),
 #                            '{0} not installed'.format(p))
@@ -53,4 +47,5 @@ class UninstallTestCase(unittest.TestCase):
         self.qi.uninstallProducts(products=[PROJECTNAME])
 
     def test_uninstalled(self):
+        """ This method test the uninstall GenericSetup profile of this package. """
         self.assertFalse(self.qi.isProductInstalled(PROJECTNAME))
