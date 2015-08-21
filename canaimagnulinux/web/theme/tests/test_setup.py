@@ -4,13 +4,12 @@
 This is an integration "unit" test.
 """
 
-from Products.CMFCore.utils import getToolByName
-
 # from canaimagnulinux.web.theme.config import DEPENDENCIES
 from canaimagnulinux.web.theme.config import PROJECTNAME
 # from canaimagnulinux.web.theme.interfaces import ICanaimaGNULinuxLayer
 from canaimagnulinux.web.theme.testing import INTEGRATION_TESTING
 
+from plone import api
 from plone.app.testing import TEST_USER_ID
 from plone.app.testing import setRoles
 
@@ -28,7 +27,7 @@ class InstallTestCase(unittest.TestCase):
 
     def setUp(self):
         self.portal = self.layer['portal']
-        self.qi = getToolByName(self.portal, 'portal_quickinstaller')
+        self.qi = api.portal.get_tool('portal_quickinstaller')
 
     def test_installed(self):
         """
