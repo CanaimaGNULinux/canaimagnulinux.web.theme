@@ -18,8 +18,6 @@ from plone.testing.z2 import ZSERVER_FIXTURE
 from plone.testing.z2 import installProduct
 from plone.testing.z2 import uninstallProduct
 
-from zope.configuration import xmlconfig
-
 
 class Fixture(PloneSandboxLayer):
 
@@ -28,12 +26,12 @@ class Fixture(PloneSandboxLayer):
     def setUpZope(self, app, configurationContext):
 
         # Load ZCML
+
+        import plone.api
+        self.loadZCML(package=plone.api)
+
         import canaimagnulinux.web.theme
-        xmlconfig.file(
-            'configure.zcml',
-            canaimagnulinux.web.theme,
-            context=configurationContext
-        )
+        self.loadZCML(package=canaimagnulinux.web.theme)
 
         # Install products that use an old-style initialize() function
         installProduct(app, 'canaimagnulinux.web.theme')
