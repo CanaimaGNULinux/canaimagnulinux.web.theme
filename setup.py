@@ -43,7 +43,7 @@ setup(name=name,
           'z3c.jbot',
           # -*- Extra requirements: -*-
 #          'collective.cover==1.0a8.post1',
-          'plone.api==1.2.1',
+          'plone.api',
       ],
       extras_require={
           'test': [
