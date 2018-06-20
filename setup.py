@@ -9,20 +9,27 @@ packages = [name.rsplit('.',x)[0] for x in reversed(range(len(name.split('.'))))
 
 setup(name=name,
       version=version,
-      description="Canaima GNU/Linux Website Kerepakupai Theme",
+      description="Canaima GNU/Linux Kerepakupai Theme, is an installable Diazo theme for Plone 4",
       long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
-      # http://pypi.python.org/pypi?%3Aaction=list_classifiers
+      # https://pypi.org/pypi?:action=list_classifiers
       classifiers=[
         "Development Status :: 5 - Production/Stable",
+        "Environment :: Web Environment",
         "Framework :: Plone",
         "Framework :: Plone :: 4.3",
+        "Framework :: Plone :: Theme",
+        "Framework :: Zope2",
+        "Framework :: Zope3",
+        "Intended Audience :: Developers",
         "Intended Audience :: System Administrators",
+        "Intended Audience :: End Users/Desktop",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7",
+        "Topic :: Internet",
         "Topic :: Internet :: WWW/HTTP",
         "Topic :: Office/Business :: Groupware",
         "Topic :: Software Development :: Libraries :: Python Modules",
