@@ -4,6 +4,8 @@ Changelog
 0.1dev (unreleased)
 -------------------
 
+- Added improvements about README file [macagua]
+
 - Updated CONTRIBUTORS file [macagua]
 
 - Updated Diazo manifest file [macagua]

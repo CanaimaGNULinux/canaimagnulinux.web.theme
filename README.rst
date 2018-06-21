@@ -1,35 +1,24 @@
-.. -*- coding: utf-8 -*-
+=========================
+canaimagnulinux.web.theme
+=========================
 
-.. contents:: Tabla de Contenidos
+A theme for `Canaima GNU/Linux community`_ website.
 
-Introducción
+
+Introduction
 ============
 
-Este producto contiene un tema `Diazo`_ en Plone 4.3 para el `sitio Web de Canaima GNU/Linux`_. 
-Este permite integrar visualmente elementos del Plone CMS, redes sociales, y demás aplicaciones 
-Web en una única interfaz de usuario.
+*Canaima Kerepakupai* Theme is an installable Plone Theme developed by 
+`Canaima GNU/Linux community`_ using the **theming*- and **packaging*- 
+features available in `plone.app.theming`_.
 
-Características
-===============
-
-- Este tema `Diazo`_ contiene los siguientes archivos de reglas:
-
-  - Por definir.
-
-Instalación
-===========
-Usted puede leer el archivo ``INSTALL.txt`` dentro del directorio ``docs`` de
-este paquete.
-
-Descargas
-=========
-
-Usted puede encontrar la versión de desarrollo del paquete ``canaimagnulinux.web.theme``
-en el `repositorio Canaima GNU/Linux`_ en Github.com.
+This product contains a Diazo_ theme in Plone 4.3 for the `Canaima GNU/Linux website`_. 
+Let you integrate Plone CMS elements visual, social networks and other web applications 
+in a unique GUI.
 
 
-Sobre la calidad
-================
+About QA
+--------
 
 .. image:: https://d2weczhvl823v0.cloudfront.net/CanaimaGNULinux/canaimagnulinux.web.theme/trend.png
    :alt: Bitdeli badge
@@ -43,31 +32,122 @@ Sobre la calidad
    :alt: Coveralls badge
    :target: https://coveralls.io/r/CanaimaGNULinux/canaimagnulinux.web.theme?branch=master
 
-Autor(es) Original(es)
-======================
 
-* Maximiliano Vilchez aka maxudes
+Requirements
+============
 
-* Leonardo J .Caballero G. aka macagua
+- From the Plone 4.1.x To the Plone 4.3 latest version (https://plone.org/download)
+- The ``plone.app.theming`` package (*will be installed as a dependency of this package*)
 
-Colaboraciones impresionantes
-=============================
 
-* Axel Díaz aka Axelio
+Screenshots
+===========
 
-* Dehivis Perez aka dehivix
+Layout of the site when viewed in a computer resolution:
 
-* Rodrigo Bravo aka goidor
+.. image:: https://github.com/CanaimaGNULinux/canaimagnulinux.web.theme/raw/master/canaimagnulinux/web/theme/diazo_resources/preview.png
 
-* Eliezer Romero aka eliezerfot123
 
-* Miguel Sanabria aka masc1293
+Features
+========
 
-* Ericka Simancas aka erickaackseriam
+- It's an installable Plone_ Theme package.
+- After installation from Add-ons controlpanel, this theme is enabled automatically.
+- Also it's a simple Diazo_ package (Zip file).
+- It's have support for clean uninstallation.
 
-Para una lista actualizada de todo los colaboradores visite:
-https://github.com/canaimagnulinux/canaimagnulinux.web.theme/contributors
 
-.. _Diazo: http://pypi.python.org/pypi/diazo
-.. _sitio Web de Canaima GNU/Linux: http://canaima.softwarelibre.gob.ve/
-.. _repositorio Canaima GNU/Linux: https://github.com/canaimagnulinux/canaimagnulinux.web.theme
+Installation
+============
+
+You can read the ``INSTALL.txt`` file inside the ``docs`` folder for this package.
+
+Zip file
+--------
+
+If you are an end user, you might enjoy installation via zip file import.
+
+1. Download a `zip file <https://github.com/CanaimaGNULinux/canaimagnulinux.web.theme/raw/master/canaimagnulinux.web.theme.zip>`_.
+2. Import the theme from the Diazo_ theme control panel.
+
+
+Buildout
+--------
+
+If you are a developer, you might enjoy installing it via buildout.
+
+For install ``canaimagnulinux.web.theme`` package add it to your ``buildout`` section's 
+*eggs- parameter e.g.: ::
+
+   [buildout]
+    ...
+    eggs =
+        ...
+        canaimagnulinux.web.theme
+
+
+and then running ``bin/buildout``.
+
+Or, you can add it as a dependency on your own product ``setup.py`` file: ::
+
+    install_requires=[
+        ...
+        'canaimagnulinux.web.theme',
+    ],
+
+
+Enabling the theme
+^^^^^^^^^^^^^^^^^^
+
+Select and enable the theme from the Diazo_ control panel. That's it!
+
+
+Contribute
+==========
+
+- Issue Tracker: https://github.com/CanaimaGNULinux/canaimagnulinux.web.theme/issues
+- Source Code: https://github.com/CanaimaGNULinux/canaimagnulinux.web.theme
+
+
+License
+=======
+
+The project is licensed under the GPLv2.
+
+
+Credits
+=======
+
+
+Authors
+-------
+
+- Maximiliano Vilchez aka maxudes.
+
+- Leonardo J .Caballero G. aka macagua.
+
+
+Amazing contributions
+---------------------
+
+- Axel Díaz aka Axelio
+
+- Dehivis Perez aka dehivix
+
+- Rodrigo Bravo aka goidor
+
+- Eliezer Romero aka eliezerfot123
+
+- Miguel Sanabria aka masc1293
+
+- Ericka Simancas aka erickaackseriam
+
+
+You can find an updated list of package contributors on https://github.com/canaimagnulinux/canaimagnulinux.web.theme/contributors
+
+
+.. _`Plone`: http://plone.org
+.. _`Diazo`: https://pypi.org/project/diazo
+.. _`plone.app.theming`: https://pypi.org/project/plone.app.theming/
+.. _`Canaima GNU/Linux community`: https://github.com/canaimagnulinux/
+.. _`Canaima GNU/Linux website`: http://canaima.softwarelibre.gob.ve/
