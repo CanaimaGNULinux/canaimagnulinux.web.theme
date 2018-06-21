@@ -12,7 +12,7 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="Canaima GNU/Linux Website Kerepakupai Theme"
+      title="canaimagnulinux.web.theme"
       directory="profiles/default"
       description="Extension profile for Canaima GNU/Linux Website Kerepakupai Theme"
       provides="Products.GenericSetup.interfaces.EXTENSION"
