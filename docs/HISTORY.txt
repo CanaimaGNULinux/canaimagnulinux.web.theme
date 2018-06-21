@@ -4,6 +4,8 @@ Changelog
 0.1dev (unreleased)
 -------------------
 
+- Updated CONTRIBUTORS file [macagua]
+
 - Updated Diazo manifest file [macagua]
 
 - Added more strings classifiers items for the metadata package [macagua]
