@@ -9,7 +9,7 @@ Introduction
 ============
 
 *Canaima Kerepakupai* Theme is an installable Plone Theme developed by 
-`Canaima GNU/Linux community`_ using the **theming*- and **packaging*- 
+`Canaima GNU/Linux community`_ using the **theming**- and **packaging**- 
 features available in `plone.app.theming`_.
 
 This product contains a Diazo_ theme in Plone 4.3 for the `Canaima GNU/Linux website`_. 
@@ -77,7 +77,7 @@ Buildout
 If you are a developer, you might enjoy installing it via buildout.
 
 For install ``canaimagnulinux.web.theme`` package add it to your ``buildout`` section's 
-*eggs- parameter e.g.: ::
+*eggs*- parameter e.g.: ::
 
    [buildout]
     ...
