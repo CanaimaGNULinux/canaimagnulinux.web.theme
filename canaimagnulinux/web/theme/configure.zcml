@@ -14,7 +14,7 @@
       name="default"
       title="canaimagnulinux.web.theme"
       directory="profiles/default"
-      description="Extension profile for Canaima GNU/Linux Website Kerepakupai Theme"
+      description="Installs the canaimagnulinux.web.theme package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
